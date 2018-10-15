@@ -23,7 +23,7 @@ namespace SCANsat
             this.listKeys = new List<TKey>();
         }
 
-        public DictionaryValueList(global.DictionaryValueList<TKey, TValue> old)
+        public DictionaryValueList(DictionaryValueList<TKey, TValue> old)
         {
             this.list = new List<TValue>((IEnumerable<TValue>)old.list);
             this.listKeys = new List<TKey>((IEnumerable<TKey>)old.listKeys);
